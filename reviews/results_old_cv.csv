@@ -1,0 +1,60 @@
+algorithm,validation_method,remove_outliers,scale_data,use_pca,best_params,accuracy,precision,recall,f1
+decision_tree_classifier,cross_validation,True,True,True,"{'criterion': 'entropy', 'max_depth': 100, 'min_samples_leaf': 1, 'min_samples_split': 2}",0.1933333333333333,0.217,0.2536031746031746,0.1754147519147519
+decision_tree_classifier,cross_validation,False,True,True,"{'criterion': 'entropy', 'max_depth': 50, 'min_samples_leaf': 1, 'min_samples_split': 2}",0.1466666666666666,0.1873333333333333,0.2825714285714286,0.1165137085137085
+decision_tree_classifier,cross_validation,True,False,True,"{'criterion': 'entropy', 'max_depth': 100, 'min_samples_leaf': 1, 'min_samples_split': 2}",0.1333333333333333,0.1396666666666666,0.2138333333333333,0.1106007326007326
+decision_tree_classifier,cross_validation,False,False,True,"{'criterion': 'gini', 'max_depth': 10, 'min_samples_leaf': 1, 'min_samples_split': 50}",0.1,0.0935374149659863,0.7063888058677463,0.074933311147926
+decision_tree_classifier,cross_validation,True,True,False,"{'criterion': 'gini', 'max_depth': 100, 'min_samples_leaf': 1, 'min_samples_split': 2}",0.42,0.4826666666666666,0.4766666666666666,0.4258831168831168
+decision_tree_classifier,cross_validation,False,True,False,"{'criterion': 'gini', 'max_depth': 100, 'min_samples_leaf': 1, 'min_samples_split': 2}",0.4,0.4609999999999999,0.4297142857142856,0.3963881673881674
+decision_tree_classifier,cross_validation,True,False,False,"{'criterion': 'gini', 'max_depth': 100, 'min_samples_leaf': 1, 'min_samples_split': 2}",0.38,0.3670068027210884,0.4268398268398267,0.3500721500721501
+decision_tree_classifier,cross_validation,False,False,False,"{'criterion': 'gini', 'max_depth': 100, 'min_samples_leaf': 1, 'min_samples_split': 2}",0.4,0.4517006802721087,0.4333819241982508,0.3935810221524507
+svm_classifier,cross_validation,True,True,True,"{'C': 0.01, 'gamma': 'scale', 'kernel': 'linear'}",0.5666666666666667,0.5453333333333333,0.7767943722943723,0.5116973026973026
+svm_classifier,cross_validation,False,True,True,"{'C': 0.01, 'gamma': 'scale', 'kernel': 'linear'}",0.5666666666666667,0.5453333333333333,0.7767943722943723,0.5116973026973026
+svm_classifier,cross_validation,True,False,True,"{'C': 0.01, 'gamma': 'scale', 'kernel': 'linear'}",0.5066666666666667,0.5081632653061224,0.5667719468739877,0.4744120958406672
+svm_classifier,cross_validation,False,False,True,"{'C': 0.01, 'gamma': 'scale', 'kernel': 'linear'}",0.5333333333333333,0.519047619047619,0.580255911888565,0.4958023835574855
+svm_classifier,cross_validation,True,True,False,"{'C': 0.01, 'gamma': 'scale', 'kernel': 'linear'}",0.6066666666666667,0.5886666666666667,0.7916536796536796,0.5452148962148963
+svm_classifier,cross_validation,False,True,False,"{'C': 0.01, 'gamma': 'scale', 'kernel': 'linear'}",0.6066666666666667,0.5886666666666667,0.7916536796536796,0.5452148962148963
+svm_classifier,cross_validation,True,False,False,"{'C': 0.01, 'gamma': 'scale', 'kernel': 'linear'}",0.56,0.5598639455782313,0.5815678652413346,0.5338696450941349
+svm_classifier,cross_validation,False,False,False,"{'C': 0.01, 'gamma': 'scale', 'kernel': 'linear'}",0.56,0.5598639455782313,0.5815678652413346,0.5338696450941349
+knn_classifier,cross_validation,True,True,True,"{'algorithm': 'auto', 'n_neighbors': 3, 'weights': 'distance'}",0.1333333333333333,0.1343333333333333,0.7874035798716649,0.1005498646281255
+knn_classifier,cross_validation,False,True,True,"{'algorithm': 'auto', 'n_neighbors': 3, 'weights': 'distance'}",0.1333333333333333,0.1343333333333333,0.7874035798716649,0.1005498646281255
+knn_classifier,cross_validation,True,False,True,"{'algorithm': 'auto', 'n_neighbors': 3, 'weights': 'distance'}",0.28,0.293,0.4433333333333333,0.2467263292263292
+knn_classifier,cross_validation,False,False,True,"{'algorithm': 'auto', 'n_neighbors': 3, 'weights': 'distance'}",0.2733333333333333,0.288,0.4445860805860805,0.2399079417314711
+knn_classifier,cross_validation,True,True,False,"{'algorithm': 'auto', 'n_neighbors': 3, 'weights': 'distance'}",0.12,0.088095238095238,0.8289331605658136,0.0896583159180233
+knn_classifier,cross_validation,False,True,False,"{'algorithm': 'auto', 'n_neighbors': 3, 'weights': 'distance'}",0.12,0.088095238095238,0.8289331605658136,0.0896583159180233
+knn_classifier,cross_validation,True,False,False,"{'algorithm': 'auto', 'n_neighbors': 3, 'weights': 'distance'}",0.3,0.2953333333333333,0.443510101010101,0.2542681207681208
+knn_classifier,cross_validation,False,False,False,"{'algorithm': 'auto', 'n_neighbors': 3, 'weights': 'distance'}",0.3,0.2953333333333333,0.443510101010101,0.2542681207681208
+decision_tree_classifier,holdout,True,True,True,default,0.16,0.1503333333333333,0.1930274874177313,0.1450542031068347
+decision_tree_classifier,holdout,False,True,True,default,0.1555555555555555,0.1406666666666666,0.1675,0.1375099501805384
+decision_tree_classifier,holdout,True,False,True,default,0.1288888888888889,0.128,0.1518095238095238,0.1297359307359307
+decision_tree_classifier,holdout,False,False,True,default,0.1155555555555555,0.1106666666666666,0.1214999999999999,0.1078978798978799
+decision_tree_classifier,holdout,True,True,False,default,0.3422222222222222,0.3476666666666667,0.3963419913419913,0.3539274222509516
+decision_tree_classifier,holdout,False,True,False,default,0.3733333333333333,0.3823333333333334,0.4200634920634921,0.3801764052940524
+decision_tree_classifier,holdout,True,False,False,default,0.3555555555555555,0.3606666666666667,0.3767063492063491,0.3507785547785548
+decision_tree_classifier,holdout,False,False,False,default,0.3466666666666667,0.358,0.4106204906204906,0.360974358974359
+svm_classifier,holdout,True,True,True,default,0.16,0.1456666666666667,0.3318558897243108,0.1594464460270912
+svm_classifier,holdout,False,True,True,default,0.16,0.1456666666666667,0.3318558897243108,0.1594464460270912
+svm_classifier,holdout,True,False,True,default,0.2533333333333333,0.2239999999999999,0.2481150973209796,0.1876694683399488
+svm_classifier,holdout,False,False,True,default,0.2488888888888888,0.2199999999999999,0.2433244631185807,0.1842749089351593
+svm_classifier,holdout,True,True,False,default,0.1733333333333333,0.146,0.274679858915153,0.1340873020593475
+svm_classifier,holdout,False,True,False,default,0.1733333333333333,0.146,0.274679858915153,0.1340873020593475
+svm_classifier,holdout,True,False,False,default,0.0622222222222222,0.0473333333333333,0.0079244663382594,0.01209867009867
+svm_classifier,holdout,False,False,False,default,0.0622222222222222,0.0473333333333333,0.0079244663382594,0.01209867009867
+knn_classifier,holdout,True,True,True,default,0.0622222222222222,0.0546666666666666,0.038075707347159,0.0287276491624317
+knn_classifier,holdout,False,True,True,default,0.0622222222222222,0.0546666666666666,0.038075707347159,0.0287276491624317
+knn_classifier,holdout,True,False,True,default,0.1955555555555555,0.1886666666666666,0.2291242461242461,0.1695537737116684
+knn_classifier,holdout,False,False,True,default,0.1955555555555555,0.1876666666666666,0.2217442002442002,0.1666411046259243
+knn_classifier,holdout,True,True,False,default,0.0266666666666666,0.02,0.0005333333333333,0.001038961038961
+knn_classifier,holdout,False,True,False,default,0.0266666666666666,0.02,0.0005333333333333,0.001038961038961
+knn_classifier,holdout,True,False,False,default,0.2,0.1916666666666666,0.2334206349206349,0.1749811234517116
+knn_classifier,holdout,False,False,False,default,0.2,0.1916666666666666,0.2334206349206349,0.1749811234517116
+xgboost_classifier,holdout,True,True,True,default,0.3422222222222222,0.3216666666666666,0.3821998556998557,0.3079446752078331
+xgboost_classifier,cross_validation,True,True,True,"{'booster': 'gbtree', 'device': 'cuda', 'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 150, 'n_jobs': -1, 'tree_method': 'hist'}",0.272,0.2639444444444445,0.41601659451659456,0.25951463351463355
+xgboost_classifier,holdout,False,True,True,default,0.3422222222222222,0.32166666666666666,0.44219985569985576,0.3079446752078331
+xgboost_classifier,cross_validation,False,True,True,"{'booster': 'gbtree', 'device': 'cuda', 'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 150, 'n_jobs': -1, 'tree_method': 'hist'}",0.272,0.2639444444444445,0.41601659451659456,0.25951463351463355
+xgboost_classifier,holdout,True,False,True,default,0.2311111111111111,0.21066666666666667,0.25457142857142856,0.18221656121656124
+xgboost_classifier,cross_validation,True,False,True,"{'booster': 'gbtree', 'device': 'cuda', 'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 150, 'n_jobs': -1, 'tree_method': 'hist'}",0.288,0.2929047619047619,0.2977561327561328,0.2679902874902875
+xgboost_classifier,holdout,False,False,True,default,0.26222222222222225,0.239,0.24345021645021642,0.22513271042682806
+xgboost_classifier,cross_validation,False,False,True,"{'booster': 'gbtree', 'device': 'cuda', 'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 150, 'n_jobs': -1, 'tree_method': 'hist'}",0.3,0.2965634920634921,0.33457692307692305,0.2554885376061847
+xgboost_classifier,holdout,True,True,False,default,0.5466666666666666,0.5416666666666667,0.5581349206349207,0.5153828393828394
+xgboost_classifier,cross_validation,True,True,False,"{'booster': 'gbtree', 'device': 'cuda', 'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 150, 'n_jobs': -1, 'tree_method': 'hist'}",0.544,0.5383333333333334,0.5679761904761904,0.5126495595907361
+xgboost_classifier,holdout,False,True,False,default,0.5466666666666666,0.5416666666666667,0.5581349206349207,0.5153828393828394
